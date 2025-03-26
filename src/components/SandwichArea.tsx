@@ -1,5 +1,4 @@
 // src/components/SandwichArea.tsx
-import React from "react";
 import { useDroppable, UniqueIdentifier } from "@dnd-kit/core";
 import {
   SortableContext,

@@ -1,5 +1,4 @@
 // src/components/IngredientBank.tsx
-import React from "react";
 import DraggableIngredient from "./DraggableIngredient";
 import { Ingredient } from "../types";
 import styles from "../styles/IngredientBank.module.css";
