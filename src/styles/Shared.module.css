@@ -1,0 +1,27 @@
+/* src/styles/Shared.module.css */
+.ingredient {
+  padding: 8px 15px;
+  margin: 5px;
+  border-radius: 20px; /* Pill shape like Duolingo */
+  border: 1px solid #ccc;
+  cursor: grab;
+  display: inline-flex; /* Make it fit content */
+  align-items: center;
+  gap: 5px;
+  font-weight: bold;
+  user-select: none; /* Prevent text selection during drag */
+  transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
+}
+
+.ingredient:active {
+  cursor: grabbing;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Style for the item being dragged (via DragOverlay) */
+.dragging {
+  opacity: 0.8;
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  cursor: grabbing;
+}

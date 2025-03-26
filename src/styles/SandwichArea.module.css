@@ -1,0 +1,53 @@
+/* src/styles/SandwichArea.module.css */
+.sandwichContainer {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.dropArea {
+  border: 3px solid #8b4513; /* Brown border for sandwich area */
+  background-color: #f5deb3; /* Wheat color */
+  min-height: 200px;
+  width: 300px;
+  margin: 10px auto;
+  padding: 10px 0; /* Padding top/bottom for space */
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column-reverse; /* Stack items from bottom up! */
+  justify-content: flex-start; /* Align items to the 'bottom' (top in reversed flex) */
+  position: relative;
+  overflow: hidden; /* Hide overflow if too many ingredients */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.2s ease-in-out;
+}
+
+.dropAreaOver {
+  background-color: #e0cfa8; /* Slightly darker when dragging over */
+  border-style: dashed;
+}
+
+.placeholder {
+  color: #a08465;
+  font-style: italic;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none; /* Don't interfere with drop */
+}
+
+.resetButton {
+  margin-top: 15px;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #ff6b6b;
+  color: white;
+  transition: background-color 0.2s ease;
+}
+
+.resetButton:hover {
+  background-color: #ff4d4d;
+}

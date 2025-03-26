@@ -1,0 +1,16 @@
+/* src/styles/App.module.css */
+.appContainer {
+  font-family: sans-serif;
+  padding: 20px;
+  max-width: 600px;
+  margin: 40px auto;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  text-align: center; /* Center align title and reset button */
+}
+
+.title {
+  color: #333;
+  margin-bottom: 30px;
+}
